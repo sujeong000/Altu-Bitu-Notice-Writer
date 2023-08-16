@@ -73,7 +73,7 @@ def make_hints_markdown(hints):
         problem_number = int(splits[0])
         description = ' '.join(splits[1:])
         markdown += f"<details><summary>{get_problem(problem_number).title}</summary><div markdown=\"1\">&nbsp;&nbsp;&nbsp;&nbsp;{description}</div></details>\n"
-    markdown += "---\n"
+    markdown += "\n---\n"
     
     return markdown
 
